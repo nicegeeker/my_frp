@@ -17,7 +17,7 @@ tar -xf ${FILE}.tar.gz
 mv ${FILE}/${FRP_CORS} /usr/bin/${FRP_CORS}
 
 
-mv ${FILE}/systemd/${FRP_CORS}.service.app /etc/systemd/system/${FRP_CORS}.service
+mv ${FILE}/systemd/${FRP_CORS}.service /etc/systemd/system/${FRP_CORS}.service
 
 # make some change to .ini
 if [ ${FRP_CORS} == "frps" ]
